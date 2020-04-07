@@ -1,0 +1,541 @@
+/*! reset.css v1.0.1 | MIT License | varxzy@github.com */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details,
+summary,
+main {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}
+
+template,
+[hidden] {
+    display: none;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+    border: 0;
+}
+
+[hidefocus],
+summary {
+    outline: 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+    font-size: 75%;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-size: 1em;
+    font-family: monospace, monospace;
+}
+
+q:before,
+q:after {
+    content: none;
+}
+
+label,
+summary {
+    cursor: default;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+    font-weight: bold;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea,
+keygen,
+legend {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+textarea {
+    overflow: auto;
+}
+
+/*body{background:#fff;font:14px/1.5 "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;color:#333;}*/
+body {
+    background: #fff;
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+/* function */
+.f-cb:after,
+.f-cbli li:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.f-cb,
+.f-cbli li {
+    zoom: 1;
+}
+
+.f-ib {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.f-dn {
+    display: none !important;
+}
+
+.f-db {
+    display: block !important;
+}
+
+.f-vbh {
+    visibility: hidden !important;
+}
+
+.f-vbv {
+    visibility: visible !important;
+}
+
+.f-fl {
+    float: left;
+}
+
+.f-fr {
+    float: right;
+}
+
+.f-pr {
+    position: relative !important;
+}
+
+.f-pa {
+    position: absolute !important;
+}
+
+.f-pf {
+    position: fixed !important;
+}
+
+.f-prz {
+    position: relative !important;
+    zoom: 1;
+}
+
+.f-oh {
+    overflow: hidden;
+}
+
+.f-ff0 {
+    font-family: arial, \5b8b\4f53;
+}
+
+.f-ff1 {
+    font-family: "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53;
+}
+
+.f-fs1 {
+    font-size: 12px;
+}
+
+.f-fs2 {
+    font-size: 14px;
+}
+
+.f-fwn {
+    font-weight: normal;
+}
+
+.f-fwb {
+    font-weight: bold;
+}
+
+.f-tal {
+    text-align: left;
+}
+
+.f-tac {
+    text-align: center;
+}
+
+.f-tar {
+    text-align: right;
+}
+
+.f-taj {
+    text-align: justify;
+    text-align-last: justify;
+    -webkit-text-size-adjust: none;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) {
+    .f-taj {
+        font-size: 0;
+    }
+}
+
+.f-taj:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.f-vat,
+.f-vata * {
+    vertical-align: top;
+}
+
+.f-vam,
+.f-vama * {
+    vertical-align: middle;
+}
+
+.f-wsn {
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.f-pre {
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.f-wwb {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.f-ti {
+    text-indent: -30000px;
+    overflow: hidden;
+}
+
+.f-ti2 {
+    text-indent: 2em;
+}
+
+.f-lhn {
+    line-height: normal;
+}
+
+.f-tdu,
+.f-tdu:hover {
+    text-decoration: underline;
+}
+
+.f-tdl,
+.f-tdl:hover {
+    text-decoration: line-through;
+}
+
+.f-tdn,
+.f-tdn:hover {
+    text-decoration: none;
+}
+
+.f-toe,
+.f-toe li {
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.f-csp {
+    cursor: pointer;
+}
+
+.f-csd {
+    cursor: default;
+}
+
+.f-csh {
+    cursor: help;
+}
+
+.f-csm {
+    cursor: move;
+}
+
+.f-usn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* 新增function样式 */
+.f-mtn {
+    margin-top: 5px !important;
+}
+
+.f-mbn {
+    margin-bottom: 5px !important;
+}
+
+.f-mtm {
+    margin-top: 10px !important;
+}
+
+.f-mbm {
+    margin-bottom: 10px !important;
+}
+
+.f-mtv {
+    margin-top: 15px !important;
+}
+
+.f-mbv {
+    margin-bottom: 15px !important;
+}
+
+.f-mtw {
+    margin-top: 20px !important;
+}
+
+.f-mbw {
+    margin-bottom: 20px !important;
+}
+
+.f-mar10 {
+    margin: 10px !important;
+}
+
+.f-ptn {
+    padding-top: 5px !important;
+}
+
+.f-pbn {
+    padding-bottom: 5px !important;
+}
+
+.f-ptm {
+    padding-top: 10px !important;
+}
+
+.f-pbm {
+    padding-bottom: 10px !important;
+}
+
+.f-ptv {
+    padding-top: 20px !important;
+}
+
+.f-pbv {
+    padding-bottom: 20px !important;
+}
+
+.f-ptw {
+    padding-top: 20px !important;
+}
+
+.f-pbw {
+    padding-bottom: 20px !important;
+}
+
+.f-padd5 {
+    padding: 5px !important;
+}
+
+.f-padd10 {
+    padding: 10px !important;
+}
+
+.f-nobor {
+    border: 0 none !important;
+}
+
+.f-nobg {
+    background: none !important;
+}
+
+.fixed:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.fixed {
+    display: block;
+    min-height: 1%;
+}
+
+*html .fixed {
+    height: 1%;
+}
+
+.clear {
+    diplay: block !important;
+    float: none !important;
+    clear: both;
+    width: auto !important;
+    height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
